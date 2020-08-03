@@ -16,14 +16,11 @@ body {
 #content {
     padding: 7vh 7vw;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
     height: 12vh;
-}
-
-nav {
-    justify-self: center;
-    align-self: center;
+    justify-content: center;
+    align-items: center;
 }
 
 nav a {
