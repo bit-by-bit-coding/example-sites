@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Quicksand&display=swap');
+
+/* Header */
+.header {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0.01vw 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 10vw;
+    margin-right: 1vw;
+    transition: 1s;
+}
+ 
+#logo:hover {
+    transform: rotate(-180deg);
+}
+
+#banner {
+    width: 100vw;
+}
+
+/* The Nav Bar */
+nav {
+    position: sticky;
+    top: 0px;
+    display: block;
+    margin: auto;
+    display: block;
+    margin: auto;
+}
+
+.nav {
+    background: white;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    width: 24vw;
+    height: 3.5vw;
+    margin-bottom: 1vw;
+    font-size: 1.2em;
+    transition-duration: 0.3s;
+}
+
+.nav:hover {
+    transform: scale(1.2);
+}
+
+
+/* Text Styling */
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+li {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+}
+
+.content {
+    padding: 2vw 5vw;
+    font-size: 1em;
+}
+
+/* Images */
+#trefoildrawing {
+    float: right;
+    padding: 3.5vw;
+    width: 25vw;
+}
+
+#tangledrawing {
+    float: left;
+    padding: 1vw 3.5vw;
+    width: 25vw;
+}
+
+#centerimg {
+    display: block;
+    margin: auto;
+}
+
+/* body {
+    cursor: url("https://img.icons8.com/wired/2x/cursor.png"), auto;
+} */
