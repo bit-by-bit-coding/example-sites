@@ -1,0 +1,65 @@
+/* Please avoid color variables since we're not teaching them! */
+
+body {
+    margin: 5% 10%;
+    font-family: 'Poppins', sans-serif;
+    background: #2b2b2b;
+    color: white;
+}
+
+#title {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 300;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+
+    text-align: center;
+    padding: 0.5%;
+    margin: 2% 0;
+}
+
+button {
+    height: 10%;
+    width: 40%;
+    background: linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%);
+    border: none;
+    color: #2b2b2b;
+    font-family: inherit;
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    border-radius: 8px;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 300px;
+}
+
+.text-item {
+    padding-right: 5%;
+}
+
+div p {
+    color: #3ad59f;
+}
+
+#yellow {
+    color: #f8ff00;
+}
