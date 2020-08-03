@@ -1,0 +1,42 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+#header {
+    height: 30vh;
+    width: 100%;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    padding: 7vh 7vw;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 12vh;
+}
+
+nav {
+    justify-self: center;
+    align-self: center;
+}
+
+nav a {
+    height: 10px;
+    width: 30vw;
+    padding: 1vh 1vw;
+    background-color: #000851;
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #000851;
+}
