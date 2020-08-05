@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Quicksand&display=swap');
 
+body {
+    margin: 0;
+    cursor: url("small_cursor.png"), auto;
+}
+
 /* Header */
 .header {
     font-family: 'Oswald', sans-serif;
@@ -29,8 +34,6 @@
 nav {
     position: sticky;
     top: 0px;
-    display: block;
-    margin: auto;
     display: block;
     margin: auto;
 }
@@ -67,29 +70,39 @@ li {
     color: black;
 }
 
-.content {
-    padding: 2vw 5vw;
+.section {
+    padding: 1vh 5vw;
     font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+iframe {
+    display: inline;
+    align-self: center;
+}
+
+.description {
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 /* Images */
 #trefoildrawing {
-    float: right;
-    padding: 3.5vw;
+    padding-left: 3%;
     width: 25vw;
+    max-height: 400px;
 }
 
 #tangledrawing {
-    float: left;
-    padding: 1vw 3.5vw;
+    padding-right: 3%;
     width: 25vw;
+    max-height: 400px;
 }
 
 #centerimg {
     display: block;
     margin: auto;
 }
-
-/* body {
-    cursor: url("https://img.icons8.com/wired/2x/cursor.png"), auto;
-} */
