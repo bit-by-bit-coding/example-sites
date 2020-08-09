@@ -1,11 +1,39 @@
 <link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="taco.png" type="image/taco">
+<title>The Quest for the Holy Guacamole</title>
 
 <body>
-    <img id="image" src="">
-    <p id="message"></p>
-    <button id="button1"></button>
-    <button id="button2"></button>
-    <p id="pocket"></p>
+    <div id="container">
+        <div id="story">
+            <h1>Inventory</h1>
+            <p id="pocket"></p>
+            <h1 id="location">Story</h1>
+            <p id="message"></p>
+            <div id="buttons">
+                <button id="button1"></button>
+                <button id="button2"></button>
+            </div>
+            <div id="input">
+                <input type="text" id="response">
+                <button id="submit">Submit</button>
+            </div>
+            <button id="button3"></button>
+        </div>
+        <img id="picture">
+    </div>
+
+    <!-- Hints -->
+    <button id="hints">&#128161; Hints</button>
+    <div id="hints-content">
+        <ul>
+            <li>After escaping the wilderness, you'll find three main locations surrounding the Village Center: the Market, the Outskirts, and the Castle</li>
+            <li>Check your inventory to see what resources you have.</li>
+            <li>Explore more to find more items!</li>
+            <li>Try venturing to the outskirts to meet friends!</li>
+            <li>Trade items you find in the Market to make money.</li>
+        </ul>
+    </ul>
+    </div>
 
     <script src="script.js"></script>
 </body>
