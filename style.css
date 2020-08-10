@@ -23,14 +23,21 @@ body {
     align-items: center;
 }
 
+nav {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 nav a {
-    height: 10px;
-    width: 30vw;
+    /* height: 10px;
+    width: 30vw; */
     padding: 1vh 1vw;
     background-color: #000851;
     color: white;
     text-decoration: none;
     transition-duration: 0.3s;
+    margin: 2px;
 }
 
 nav a:hover {
