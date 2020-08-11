@@ -7,6 +7,14 @@ aButtonElement.innerText = "Go to field trip with class"
 bButtonElement.innerText = "Dip class, hang out with friends"
 aButtonElement.onclick = goToMuseum;
 bButtonElement.onclick = goWithFriends;
+function goWithFriends() {
+    pElement.innerText = "Sounds like you aren't the most studious student, am I right? Who could blame you? Your friends debate over whether to go to the museum (but stop for a few snacks on the way) or just forget about school and go to the city.";
+    aButtonElement.innerText = "Go to the field trip";
+    bButtonElement.innerText = "Go to the city";
+    aButtonElement.onclick = goToMuseum;
+    bButtonElement.onclick = goToCity;
+}
+
 function goToMuseum() {
     pElement.innerText = "Looks like you're a good student! You go with your class to a museum, which seems kinda lame. But when you enter, you see thousands of ancient, magical relics. Turns out, one of the most prized, magical wands used by ancient sorceress Circe has been stolen! You remember passing by a suspicious hallway when you first walked in. Do you want to explore it or follow your classmates?";
     aButtonElement.innerText = "Explore the hallway";
@@ -70,17 +78,29 @@ function sellWand() {
     aButtonElement.onclick = goToMuseum;
     bButtonElement.onclick = goToCity;
 }
+function goToCity() {
+    pElement.innerText = "You're at the bustling city with your friends, having a great time. Should you go to the mall for some shopping or the arcade for a few fun games?";
+    aButtonElement.innerText = "Go to mall";
+    bButtonElement.innerText = "Go to arcade";
+    aButtonElement.onclick = goToMall;
+    bButtonElement.onclick = goToAracde;
+}
+function goToMall() {
+    pElement.innerText = "Oops! Looks like the mall is experiencing some *technical issues.* To get them fixed, go to the 'market' workshop and learn how to make your very own shopping center!";
+    aButtonElement.innerText = "Go to arcade";
+    bButtonElement.innerText = "Go to class";
+    aButtonElement.onclick = goToAracde;
+    bButtonElement.onclick = goToMuseumLate;
+}
+function goToMuseumLate() {
+    pElement.innerText = "Wow, thanks for showing up to class! You're a little late, but you haven't missed much. The class leader has just been walking through the thousands of ancient, magical relics. Turns out, one of the most prized, magical wands used by ancient sorceress Circe has been stolen! You remember passing by a suspicious hallway when you first walked in. Do you want to explore it or follow your classmates?";
+    aButtonElement.innerText = "Explore the hallway";
+    bButtonElement.innerText = "Follow your class";
+    aButtonElement.onclick = exploreHallway;
+    bButtonElement.onclick = followClass;
+}
 /*
-start game in school, plot is like mystery/school trip
-decide between going with class or dipping w/some friends in their car or something (flying)
-school -> museum
-friends can go to the city or to museum
-museum (magical ancient wand been stolen) -> explore dark room w/armor or follow class
-dark room -> hear a load noise, follow/find class
-follow -> die
-find class, stay for a while -> spy sparkles or something on floor, follow/continue
-continue -> go back to school, don't find it
-follow -> find wand!
+
 find wand -> sell, give back
 sell -> you get rich
 give back -> get good grades
