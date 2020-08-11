@@ -15,7 +15,18 @@ function goToMuseum() {
     bButtonElement.onclick = followClass;
 }
 function exploreHallway() {
-    
+    pElement.innerText = "You decide to explore the suspicious, dark hallway all by yourself. As you walk down the room, you hear a soft scuttling sound and then see a poof of dust obscure part of your vision. You get a little scared, but you want to know what it is.";
+    aButtonElement.innerText = "Find out what it is";
+    bButtonElement.innerText = "Go back and find your class";
+    aButtonElement.onclick = die;
+    bButtonElement.onclick = findClass;
+}
+function die() {
+    pElement.innerText = "Looks like you never should have tried to find out what the mysterious sound was! Turns out, it was a teleportation spell used by one of the mysterious guardians of the museum that you got caught up in. When you did, it ripped apart your body into billions of atoms that were impossible to put back together! Oops!! Reload the page to try again!"
+    aButtonElement.innerText = "Go back to museum";
+    bButtonElement.innerText = "Go back to city";
+    aButtonElement.onclick = goToMuseum;
+    bButtonElement.onclick = goToCity;
 }
 /*
 start game in school, plot is like mystery/school trip
