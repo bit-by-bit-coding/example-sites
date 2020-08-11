@@ -2,7 +2,7 @@ let pElement = document.getElementById("messagBox");
 let aButtonElement = document.getElementById("aButton");
 let bButtonElement = document.getElementById("bButton");
 
-pElement.innerText = "Welcome to the game! You are a student wizard attending a prestigious school. Today, you are going on a field trip. Sounds kinda lame, so maybe you want to hang out with friends instead..."
+pElement.innerText = "Welcome to the game! Unfortunately, I don't know your name, so I can't say: Welcome, 'your name', to the game! :( (*Psst* If you want to learn how to add character customization, make sure to go to the workshops that help make this feature that will be happening on the last three days.) You are a student wizard attending a prestigious school. Today, you are going on a field trip. Sounds kinda lame, so maybe you want to hang out with friends instead..."
 aButtonElement.innerText = "Go to field trip with class"
 bButtonElement.innerText = "Dip class, hang out with friends"
 aButtonElement.onclick = goToMuseum;
@@ -31,7 +31,7 @@ function exploreHallway() {
 }
 function findClass() {
     pElement.innerText = "Whew, that was a close one. You run back to your class as quickly as you can. You follow your leader around for a few hours until you spy a suspicious path of...sparkles? Weird.";
-    aButtonElement.innerText = "Follow the path!";
+    aButtonElement.innerText = "Follow the sparkles (ooh, shiny)!";
     bButtonElement.innerText = "Stay with class!";
     aButtonElement.onclick = followSparkles;
     bButtonElement.innerText = stayWithClass;
@@ -48,7 +48,7 @@ function followClass() {
     aButtonElement.innerText = "Follow the path!";
     bButtonElement.innerText = "Stay with class!";
     aButtonElement.onclick = followSparkles;
-    bButtonElement.innerText = stayWithClass;
+    bButtonElement.onclick = stayWithClass;
 }
 function stayWithClass() {
     pElement.innerText = "Nah, the sparkles looked a little suspicious. You follow the class for the rest of the field trip, and nobody ever finds the wand. However, you go back to school with a mystery to talk to your friends about and some new experiences. Reload the page to play again!"
@@ -58,7 +58,7 @@ function stayWithClass() {
     bButtonElement.onclick = goToCity;
 }
 function followSparkles() {
-    pElement.innerText = "The sparkles are just too shiny for your to resist. You trace the path they have left through the museum and out the museum door. And then you see it! It's Circe's ancient wand moving by itself, wiggling its way towards the road. 'Stop!' you yell at the wand, but it doesn't. You resort to casting a freeze spell on the wand. Once it's frozen, you grab it. Looking at it, you remember just how much this wand is worth. What to do, what to do...";
+    pElement.innerText = "The sparkles are just too shiny for your to resist. You trace the path they have left through the museum and out the museum door. And then you see it! It's Circe's ancient wand moving by itself, wiggling its way towards the road. 'Stop!' you yell at the wand, but it doesn't. You resort to casting a freeze spell on the wand. Once it's frozen, you grab it. Looking at it, you remember just how much this wand is worth. It would be a nice addition to your inventory! (As a side note, if you want to learn how to create your own inventory for your game, make sure to go to the workshops we will be providing to do so!) What to do, what to do...";
     aButtonElement.innerText = "Give it back to the museum";
     bButtonElement.innerText = "Sell it for money!";
     aButtonElement.onclick = giveWandBack;
@@ -86,12 +86,13 @@ function goToCity() {
     bButtonElement.onclick = goToAracde;
 }
 function goToMall() {
-    pElement.innerText = "Oops! Looks like the mall is experiencing some *technical issues.* To get them fixed, go to the 'market' workshop and learn how to make your very own shopping center!";
+    pElement.innerText = "Oops! Looks like the mall is experiencing some *technical issues.* To get them fixed, go to the workshops that can help build your very own 'market' feature and learn how to make your very own shopping center!";
     aButtonElement.innerText = "Go to arcade";
-    bButtonElement.innerText = "Go to class";
+    bButtonElement.innerText = "Go to class (late, but better than missing the whole day!)";
     aButtonElement.onclick = goToAracde;
     bButtonElement.onclick = goToMuseumLate;
 }
+
 function goToMuseumLate() {
     pElement.innerText = "Wow, thanks for showing up to class! You're a little late, but you haven't missed much. The class leader has just been walking through the thousands of ancient, magical relics. Turns out, one of the most prized, magical wands used by ancient sorceress Circe has been stolen! You remember passing by a suspicious hallway when you first walked in. Do you want to explore it or follow your classmates?";
     aButtonElement.innerText = "Explore the hallway";
@@ -99,19 +100,25 @@ function goToMuseumLate() {
     aButtonElement.onclick = exploreHallway;
     bButtonElement.onclick = followClass;
 }
-/*
+function goToAracde() {
+    pElement.innerText = "The arcade seems to be under a bit of construction, but you still have two options to go to.";
+    aButtonElement.innerText = "Game of Chance";
+    bButtonElement.innerText = "Quiz Yourself!";
+    aButtonElement.onclick = gameOfChance;
+    bButtonElement.onclick = quizYourself;
+}
+function gameOfChance() {
+    pElement.innerText = "Ugh, technical difficulties! No worries, though. If you go to the proper workshops, you can learn to set up your very own game of chance and get this one fixed!";
+    aButtonElement.innerText = "Go back to arcade";
+    bButtonElement.innerText = "Go to mall";
+    aButtonElement.onclick = goToAracde;
+    bButtonElement.onclick = goToMall;
+}
+function quizYourself() {
+    pElement.innerText = "Yikes! Seems like the quiz isn't loading. Hey, don't worry. When you can go to workshops, you can learn to code your very own quiz feature and add it to your story!";
+    aButtonElement.innerText = "Go back to arcade";
+    bButtonElement.innerText = "Go to mall";
+    aButtonElement.onclick = goToAracde;
+    bButtonElement.onclick = goToMall;
+}
 
-find wand -> sell, give back
-sell -> you get rich
-give back -> get good grades
-city -> market or arcade or 
-arcade -> game of chance, quiz
-game of chance -> arcade, market
-quiz -> arcade, market
-market -> buy things, go to class (find class)
-game of chance
-quiz
-character customization
-inventory 
-market
-*/
