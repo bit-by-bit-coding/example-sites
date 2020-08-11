@@ -515,7 +515,7 @@ function changeButtons(message1, message2) {
     if (hunger >= 40) {
         dieHunger();
     }
-    if (thirst == 22) {
+    if (thirst >= 22) {
         let temp = confirm("You look like you are thirsty. Would you like to drink some water? If so, click 'OK.' Otherwise, click 'Cancel.'");
         if (temp == true && inventory.indexOf("water") != -1) {
             thirst -= 15;
@@ -529,7 +529,7 @@ function changeButtons(message1, message2) {
             alert("Just don't die from thirst!");
         }
     }
-    if (hunger == 32) {
+    if (hunger >= 32) {
         let temp = confirm("You look like you are hungry. Would you like to eat some food? If so, click 'OK.' Otherwise, click 'Cancel.'");
         if (temp == true && inventory.indexOf("food") != -1) {
             thirst -= 10;
