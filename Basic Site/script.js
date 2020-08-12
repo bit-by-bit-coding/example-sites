@@ -1,6 +1,8 @@
 let pElement = document.getElementById("messagBox");
 let aButtonElement = document.getElementById("aButton");
 let bButtonElement = document.getElementById("bButton");
+let inventoryElement = document.getElementById("inventory");
+inventoryElement.innerText = "Inventory: Yikes, looks like we don't know how to make an inventory yet. To learn how to, go to the workshops needed to create this feature on Friday!";
 let startGame = function () {
     pElement.innerText = "Welcome to the game! Unfortunately, I don't know your name, so I can't say: Welcome, 'your name', to the game! :( (*Psst* If you want to learn how to add 'character customization,' make sure to go to the workshops that help make this feature that will be happening on the last three days.) You are a student wizard attending a prestigious school. Today, you are going on a field trip. Sounds kinda lame, so maybe you want to hang out with friends instead..."
     aButtonElement.innerText = "Go to field trip with class"
