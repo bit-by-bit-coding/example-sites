@@ -36,7 +36,7 @@ let findClass = function () {
     aButtonElement.innerText = "Follow the sparkles (ooh, shiny)!";
     bButtonElement.innerText = "Stay with class!";
     aButtonElement.onclick = followSparkles;
-    bButtonElement.innerText = stayWithClass;
+    bButtonElement.onclick = stayWithClass;
 }
 let die = function () {
     pElement.innerText = "Looks like you never should have tried to find out what the mysterious sound was! Turns out, it was a teleportation spell used by one of the mysterious guardians of the museum that you got caught up in. When you did, it ripped apart your body into billions of atoms that were impossible to put back together! Oops!!"
